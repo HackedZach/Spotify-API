@@ -1,6 +1,6 @@
-const SpotifyWebApi = require("spotify-web-api-node");
+//const SpotifyWebApi = require("spotify-web-api-node");
 
-const spotifyApi = new SpotifyWebApi();
+//const spotifyApi = new SpotifyWebApi();
 
 
 const APIController = (function() {
@@ -21,7 +21,7 @@ const APIController = (function() {
         });
 
         const data = await result.json();
-        spotifyApi.setAccessToken(data.access_token); 
+        //spotifyApi.setAccessToken(data.access_token); 
         return data.access_token;
     }
     
